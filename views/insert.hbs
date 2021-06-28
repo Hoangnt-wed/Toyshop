@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>Insert</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row justify-center">
+      <div class="col-12">
+        <header>
+          <h1>Add information product</h1>
+
+        </header>
+        <div class="input-group mb-3">
+    <form action="/doInsert" method="post">
+        Name <input type="text" name="txtName" id="">
+        <label for="" style="color:rgb(255, 0, 0);">{{model.nameError}}</label>
+        <br>
+        MSP <input type="text" name="txtMSP" id="">
+        <label for="" style="color:rgb(255, 0, 0);">{{model.mspError}}</label>
+        <br>
+        <br>
+        SL <input type="text" name="txtSL">
+        <label for="" style="color:rgb(255, 0, 0);">{{model.SlError}}</label>
+        <br>
+        Price <input type="text" name="txtPrice">
+        <input type="submit" value="Insert">
+        <td><button><a href="/allProduct">Back</a></button></td>
+    </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

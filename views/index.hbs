@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ToyShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      
+      background-color: #f2f2f2;
+      padding: 25px;}
+  </style>
+</head>
+<body>
+
+<div style="background-image: url(https://learningexpress.com/stores/store-images/284/20171012-f0935e4cd5920aa6c7c996a5ee53a70f.jpg);" class="jumbotron" >
+  <div class="container text-center">
+    <h1 style="color: rgb(253, 253, 253); font-size: 120px;">ToyShop</h1>   
+      
+    <p style="color: rgb(245, 245, 247);">Super Car toy, paradigm home & toy accessories</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <a class="navbar-brand" href="/">ToyShop</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">home page</a></li>
+        <li><a href="/allProduct">All products</a></li>
+        <li><a href="/insert">Add new product</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="background-image: url(https://www.thetoyshop.com/medias/Hottest-Toys-2020-HP-DT-2000x764px.jpg?context=bWFzdGVyfHJvb3R8Nzk5MDF8aW1hZ2UvanBlZ3xoZGMvaGE5LzkyMzM1MjU0NzMzMTAuanBnfDQzZTM2NGRhMDZmYjk4YjkxNWFlZWJlOGVmNTAwOTE5MmJhOThhZGU5MjNhZDE2YmIwYTk2Nzg5ODZkNzQ3ZWY);  ">    
+  <div class="row">
+    {{#each model}}
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">{{name}}</div>
+        <div class="panel-body">(MSP): {{MSP}}</div>
+        <div class="panel-body">(Number product): {{Sl}} Cai</div>
+        <div class="panel-footer">(Price): {{Pirce}} VNĐ</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div><br><br>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">connect information</h5>
+        <p>you can call to the munber phone</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">number phone</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="zalo.com">0932041974</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Facebook</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://www.facebook.com/nguyenthe.hoang.5203">Hoangnt</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Company:
+    <a href="https://www.google.com/maps/place/C%E1%BB%95+D%C6%B0%C6%A1ng,+Ti%C3%AAn+D%C6%B0%C6%A1ng,+%C4%90%C3%B4ng+Anh,+Hanoi,+Vietnam/@21.1556579,105.8238744,16z/data=!3m1!4b1!4m5!3m4!1s0x313501a9e89a0249:0xd8a6c4eba6f6ee68!8m2!3d21.1559722!4d105.827562"> Cổ Dương, Tiên Dương, Đông Anh, Hà nội</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
